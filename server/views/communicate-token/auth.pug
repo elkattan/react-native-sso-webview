@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      title Auth TETCO
+      style.
+        body { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+   body
+      script.
+         setTimeout(function () {
+            if (window.ReactNativeWebView) {
+               window.ReactNativeWebView.postMessage('#{cookie}')
+            }
+         }, 500)
+
+      h2#auth Authenticated Page
+      p#info This page tried to send you a token, did you receive it?!
+      h4#cookie #{cookie}

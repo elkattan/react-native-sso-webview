@@ -1,0 +1,13 @@
+doctype html
+html
+   head
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      title Hello TETCO
+      style.
+        body { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        input[type=submit] { background-color: #4CAF50; border: none; border-radius: 30px; padding: 10px; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; }
+   body
+      h2#welcome Welcome To the Script Cookie page
+      p#instructions Press the button bellow to authenticate
+      form(action='/script-cookie/auth', method='POST')
+         input(type='submit', value='Authenticate')

@@ -13,6 +13,7 @@ import CommunicateToken, {
   CommunicateTokenScreen,
 } from './client/screens/CommunicateTokenScreen';
 import MechanismsList, {MechanismsListScreen} from './client/MechanismsList';
+import Dialog, {DialogComponent} from './client/components/Dialog';
 
 // Register Screens
 Navigation.registerComponent(MechanismsListScreen, () => MechanismsList);
@@ -25,6 +26,9 @@ Navigation.registerComponent(
   () => AccessTokenFromScriptCookie,
 );
 Navigation.registerComponent(CommunicateTokenScreen, () => CommunicateToken);
+
+// Register Components
+Navigation.registerComponent(DialogComponent, () => Dialog);
 
 const root = {
   stack: {

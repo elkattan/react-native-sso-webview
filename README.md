@@ -12,7 +12,7 @@ The repo contains
 ## SSO Mechanisms
 The following are the mechanisms that the repo attempts to simulate
 
-1. Grabbing cookie from HttpOnly token ❌
+1. Grabbing cookie from HttpOnly token ✅
 2. Grabbing cookie from non-HttpOnly token ✅
 3. Communicating token with web page ✅
 
